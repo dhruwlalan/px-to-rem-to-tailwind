@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+        font-family: inherit;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        font-family: sans-serif;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+      }
+      body {
+        padding: 20px;
+        background-color: teal;
+      }
+      label {
+        color: white;
+        font-size: 2rem;
+      }
+      input {
+        position: relative;
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        border: 1px solid white;
+        border-radius: 2px;
+        width: 10rem;
+        outline: none;
+        font-family: sans-serif;
+        color: black;
+        font-size: 1.8rem;
+      }
+      hr {
+        margin: 0 2rem;
+        color: white;
+        font-weight: 900;
+        height: 5px;
+        width: 1rem;
+        border: none;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        margin-top: 3.2rem;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="px">px</label>
+      <input type="number" id="px" />
+    </div>
+    <hr></hr>
+    <div>
+      <label for="rem">rem</label>
+      <input type="number" id="rem" />
+    </div>
+    <hr></hr>
+    <div>
+      <label for="tailwind">tailwind</label>
+      <input type="number" id="tailwind" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
